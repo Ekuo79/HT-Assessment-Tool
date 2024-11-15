@@ -4,9 +4,9 @@ from langchain_google_vertexai import ChatVertexAI
 from google.cloud import aiplatform
 from typing import List
 
-os.environ["GOOGLE_API_KEY"] = 'AIzaSyAjnjCk6AzDuI1qEbizaNpG8nQIv0jzp4k'
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'C:/Users/Eric Kuo/Downloads/spheric-subject-389822-e0d01a45699f.json'
-aiplatform.init(project="spheric-subject-389822", location="us-central1")
+os.environ["GOOGLE_API_KEY"] = ''
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ''
+aiplatform.init(project="", location="us-central1")
 
 rubric = """
 I have a rubric for assessing Anti-Human trafficking training for hotels. The features codes listed in capital letters have different associated point values. The bullet points with the "+" under the feature codes explain what the feature is and examples of what the trainings could contain to fulfill that feature (does not necessarily mean this is the only way to get the feature point and do not give points for "+" bullet points). This is the rubric below:
