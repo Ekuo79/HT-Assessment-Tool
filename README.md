@@ -1,13 +1,20 @@
 # Human Trafficking Training Assessment Tool
 
 ## How to Create Dataset
+Create a JSON in the same format as EK1.json or EK2.json with the same keys.
+Name the json file your initials and the training number to help us avoid conflicting file names.
+- Put the content of the training in "content"
+- Put the feature codes present in the Traning and its associated point value in "features"
+- Put the total amount of points the Training earned in "total_points"
 
+Take advantage of ChatGPT. Here's how I created EK2.json:
+For example, ask ChatGPT (or any other LLM):
 
+```Create an anti-human trafficking Training with this rubric below with all the features listed except for TAILORED_CONTENT and LEGAL_REGULATIONS: <insert rubric found in main.py>```
 
-## Prerequisites
-Make sure you have the following installed on your system:
-- Python (https://www.python.org/downloads/) (version 3.6 or later)
-- Git (https://git-scm.com/)
+Then, paste the answer chatgpt gave into content , adjust the features to what is actually present, and adjust the total points.
+
+Try to make a variety of different trainings with various point totals. For example, make a trainings with around 1000 words, 2000 words and ones with around 3000-5000 words.
 
 ## Setup Instructions
 
