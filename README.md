@@ -14,7 +14,7 @@ For example, ask ChatGPT (or any other LLM):
 
 Then, paste the answer chatgpt gave into content , adjust the features to what is actually present, and adjust the total points.
 
-Try to make a variety of different trainings with various point totals. For example, make a trainings with around 1000 words, 2000 words and ones with around 3000-5000 words.
+Try to make a variety of different trainings with various point totals. For example, make trainings with around 1000 words, 2000 words and ones with around 3000-5000 words.
 
 ## Setup Instructions
 
