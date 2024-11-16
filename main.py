@@ -99,9 +99,9 @@ with open("example.txt", "r") as file:
     content = file.read()
 
 class FeaturePresent(BaseModel):
-    code: str = Field(description="The feature code that the training text is missing")
+    code: str = Field(description="The feature code that the training text has")
     point: int = Field(description="How many points this feature is worth (from 1-3)")
-    description: str = Field(description="Reason for not giving the training the points for this feature", default="")
+    description: str = Field(description="Reason for giving the training the points for this feature", default="")
 
 class Outputs(BaseModel):
     outputs: List[FeaturePresent]
@@ -118,7 +118,6 @@ generation_config = {
   "top_p": 0.95,
   "top_k": 64,
   "max_output_tokens": 512,
-#   "response_mime_type": "text/plain",
 }
 
 safety_settings = {
