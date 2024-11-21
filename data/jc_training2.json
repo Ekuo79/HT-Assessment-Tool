@@ -1,0 +1,15 @@
+{
+  "content": "Overall Definition\nHuman trafficking is a form of modern-day slavery in which people are exploited for labor or sex. It involves the use of force, fraud, or coercion to compel individuals into situations of exploitation.\n\nHuman Trafficking Signs\n\nBe on the lookout for these signs of potential human trafficking:\n\nPhysical Signs:\nInjuries or signs of physical abuse\nMalnutrition or poor hygiene\nBrandings or tattoos\nBehavioral Signs:\nSubmissive or fearful demeanor\nLack of control over personal belongings or identification\nReluctance to talk or make eye contact\nCircumstantial Signs:\nMultiple individuals sharing a single room\nFrequent guest turnover\nSuspicious activity, such as individuals entering and exiting rooms frequently\nPresence of a controlling individual\nLimited personal possessions\nRisk Reduction\n\nIf you suspect human trafficking, do not confront the individuals involved. Instead, take the following steps:\n\nDocument the incident:\nNote the date, time, location, and specific details of what you observed.\nTake photos or videos, if possible, without compromising your safety.\nReport the incident:\nContact your hotel's security team or management immediately.\nConsider reporting the incident to local law enforcement or a human trafficking hotline.\nTailored Content for Different Hotel Employee Positions\n\nFront Desk Staff:\nPay attention to unusual reservation patterns, such as multiple rooms booked under the same name or a large number of rooms booked for a short period.\nBe alert to guests who appear to be controlled or coerced by others.\nHousekeeping Staff:\nLook for signs of physical abuse or neglect in rooms.\nBe aware of unusual activity, such as frequent room changes or guests who avoid interaction.\nSecurity Staff:\nMonitor for suspicious activity in common areas, such as loitering or drug use.\nBe prepared to intervene in situations where guests appear to be in distress.\nPartnerships\n\nOur hotel is committed to working with anti-human trafficking organizations to combat this serious issue. We have partnered with [List of partner organizations] to provide resources and support to victims of human trafficking.\n\nLegal Regulations\n\nIt is important to understand the legal implications of human trafficking. As a hotel employee, you may be required to report suspected cases of human trafficking to law enforcement. Failure to do so could result in legal consequences.\n\nBy being aware of the signs of human trafficking and taking appropriate action, you can help to protect vulnerable individuals and make a difference in the fight against this crime.",
+  "features" : [
+    {"code": "OVERALL_DEFINITION", "point": 3},
+    {"code": "HUMAN_TRAFFICKING_SIGNS", "point": 3},
+    {"code": "RISK_REDUCTION", "point": 2},
+    {"code": "PARTNERSHIPS", "point": 2},
+    {"code": "LEGAL_REGULATIONS", "point": 3},
+    {"code": "SKILLS", "point": 3},
+    {"code": "TAILORED_CONTENT", "point": 1},
+    {"code": "SURVIVOR_ACCOUNTS", "point": 1},
+    {"code": "AUDIOVISUAL_CONTENT", "point": 1}
+  ],
+  "total_points": 22
+}

@@ -4,8 +4,8 @@ from langchain_google_vertexai import ChatVertexAI
 from google.cloud import aiplatform
 from typing import List
 
-os.environ["GOOGLE_API_KEY"] = ''
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ''
+os.environ["GOOGLE_API_KEY"] = '0159e94324c2bc94dd556101f0511656eca1f8c3'
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'c:\Users\jchau\Downloads\plexiform-crane-442418-u4-0159e94324c2.json'
 aiplatform.init(project="", location="us-central1")
 
 rubric = """
