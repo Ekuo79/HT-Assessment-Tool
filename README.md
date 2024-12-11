@@ -44,6 +44,6 @@ With the virtual environment activated, install the required dependencies:
 ```pip install -r requirements.txt```
 
 ### 6. Google API Key
-Replace empty string in main with your own API Key
+Replace empty string in main with your own API Key. MAKE SURE TO NOT INCLUDE YOUR KEYS WHEN YOU PUSH TO GITHUB!!!
 
 
