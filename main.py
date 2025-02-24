@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from langchain_google_vertexai import ChatVertexAI
 from google.cloud import aiplatform
@@ -6,9 +7,11 @@ from typing import List
 import json
 import unittest
 
-os.environ["GOOGLE_API_KEY"] = ''
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ''
-aiplatform.init(project="", location="us-central1")
+load_dotenv()
+
+# os.environ["GOOGLE_API_KEY"] = ''
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+aiplatform.init(project=os.getenv("PROJECT_ID"), location="us-central1")
 
 prompt = """
 What features are present in this training using the rubric above?
