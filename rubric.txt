@@ -20,7 +20,7 @@ SEARCH_HOTEL_ADS:
 
 
 Features that get 2 points (4 total):
-VICTUM_FOCUSED:
+VICTIM_FOCUSED:
 + Overall focus on victims of trafficking over attackers
 
 RISK_REDUCTION:
@@ -30,7 +30,7 @@ INTERACTIVITY:
 + Role-playing Human Trafficking situations
 + 5-10 question Quiz
 
-PARTERNSHIPS:
+PARTNERSHIPS:
 + Partnerships with anti-Human Trafficking organizations
 + Shelter NGOs may use hotels when housing is full
 + An NGO representative will accompany and pay for a victims stay at a hotel.
@@ -46,7 +46,7 @@ OVERALL_DEFINTION:
 + Generality for different workers
 + Show crime scene photos and real examples
 
-HUMAN_TRAFFICKING_SIGNS:
+TRAFFICKING_SIGNS:
 + Signs of Human Trafficking and what to look for (Victims are not always visibly obvious)
 + Rarely seeing a person on their own
 + Person does not answer questions
