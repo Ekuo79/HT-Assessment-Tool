@@ -73,18 +73,18 @@ def extract_features(content, rubric, prompt):
     for i, chunk in enumerate(content_chunks):
         try:
             response = structured_model.invoke(rubric + prompt + "Content:\n" + chunk)
-            
+            print(response)
             if response and hasattr(response, "outputs"):
                 all_responses.extend(response.outputs)
             else:
-                print(f"⚠️ Warning: Model returned None or invalid response for chunk {i+1}")
+                print(f"Warning: Model returned None or invalid response for chunk {i+1}")
 
         except Exception as e:
-            print(f"❌ Error processing chunk {i+1}: {e}")
+            print(f"Error processing chunk {i+1}: {e}")
 
         # Add delay to ensure only 2 requests per minute
         if i < len(content_chunks) - 1:  # Avoid sleeping after the last request
-            print("⏳ Waiting 30 seconds to comply with rate limits...")
+            print("Waiting 30 seconds to comply with rate limits...")
             time.sleep(30)
 
     # Remove duplicates based on feature code
