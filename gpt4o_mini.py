@@ -55,7 +55,7 @@ def extract_features(content, rubric, prompt, model="gpt-4o-mini"):
                     print(f"⚠️ Unexpected response format for chunk {i+1}: {parsed_output}")
 
         except Exception as e:
-            print(f"❌ Error processing chunk {i+1}: {e}")
+            print(f"Error processing chunk {i+1}: {e}")
 
     # Remove duplicates based on feature code
     unique_features = {feature["code"]: FeaturePresent(**feature) for feature in all_responses}.values()
@@ -66,7 +66,9 @@ def extract_features(content, rubric, prompt, model="gpt-4o-mini"):
 with open("rubric.txt", "r") as f:
     rubric = f.read()
 
-with open("FRLA_training.txt", "r") as file:
+# with open("FRLA_training.txt", "r") as file:
+#     content = file.read()
+with open("PACT_training.txt", "r") as file:
     content = file.read()
 
 # Define prompt
