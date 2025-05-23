@@ -1,9 +1,7 @@
 This is the rubric for assessing Anti-Human trafficking training for hotels. The features codes listed in capital letters have different associated point values. The feature codes are followed by a short description of how the feature might be present in the training (there may be other ways for the training to cover that feature). This is the rubric below:
-24 total points available
+21 total points available
 
-Features that get 1 point (4 total):
-AUDIOVISUAL_CONTENT: Audiovisual content such as videos
-
+Features that get 1 point (3 total):
 SURVIVOR_ACCOUNTS: First-hand survivor accounts and cases
 
 TAILORED_CONTENT: Tailored content for different hotel employee positions
@@ -11,12 +9,10 @@ TAILORED_CONTENT: Tailored content for different hotel employee positions
 STATISTICS: Including data like statistics and facts on trafficking
 
 
-Features that get 2 points (4 total):
+Features that get 2 points (3 total):
 VICTIM_FOCUSED: Overall focus on victims of trafficking over attackers
 
 RISK_REDUCTION: Dont want employees to engage, call authorities
-
-INTERACTIVITY: Role-playing Human Trafficking situations, 5-10 question Quiz
 
 PARTNERSHIPS: Partnerships with anti-Human Trafficking organizations, Shelter NGOs may use hotels when housing is full, An NGO representative will accompany and pay for a victims stay at a hotel, Could list which NGOs are participating, Be wary some propagate shallow advice and misinformation
 

@@ -66,10 +66,10 @@ def extract_features(content, rubric, prompt, model="gpt-4o-mini"):
 with open("rubric_revised.txt", "r") as f:
     rubric = f.read()
 
-with open("FRLA_training.txt", "r") as file:
-    content = file.read()
-# with open("PACT_training.txt", "r") as file:
+# with open("FRLA_training.txt", "r") as file:
 #     content = file.read()
+with open("PACT_training.txt", "r") as file:
+    content = file.read()
 
 # Define prompt
 prompt = """
@@ -86,8 +86,8 @@ features = extract_features(content, rubric, prompt)
 total_points = sum(feature.point for feature in features)
 
 ALL_FEATURE_CODES = {
-    "AUDIOVISUAL_CONTENT", "SURVIVOR_ACCOUNTS", "TAILORED_CONTENT", "STATISTICS",  # 1 pt
-    "VICTIM_FOCUSED", "RISK_REDUCTION", "INTERACTIVITY", "PARTNERSHIPS",           # 2 pt
+    "SURVIVOR_ACCOUNTS", "TAILORED_CONTENT", "STATISTICS",  # 1 pt
+    "VICTIM_FOCUSED", "RISK_REDUCTION", "PARTNERSHIPS",           # 2 pt
     "OVERALL_DEFINTION", "TRAFFICKING_SIGNS", "LAW_ENFORCEMENT", "LEGAL_REGULATIONS"  # 3 pt
 }
 
@@ -105,3 +105,38 @@ print("*******************Features*************************")
 print(features)
 print("***********************Total Points****************************************")
 print(f"Total Point Value: {total_points}")
+
+
+# Feedback generation prompt
+feedback_prompt = f"""
+Rubric:
+{rubric}
+
+Based on the rubric above, the training contains the following features:
+{json.dumps([f.dict() for f in features], indent=2)}
+
+The training does NOT cover these features:
+{json.dumps(sorted(missing_codes), indent=2)}
+
+
+Give overall feedback in just 1-3 sentences. If the training is missing any features, use additional sentences to explain how the training is missing this feature and how it can incorporate it. Only include additional feedback if the training is missing features"""
+
+
+# Generate feedback from OpenAI
+try:
+    feedback_response = openai.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are an expert evaluator for human trafficking training materials."},
+            {"role": "user", "content": feedback_prompt}
+        ],
+        temperature=0.5,
+        max_tokens=700
+    )
+
+    feedback_text = feedback_response.choices[0].message.content.strip()
+    print("\n***********************FEEDBACK*********************************")
+    print(feedback_text)
+
+except Exception as e:
+    print(f"Error generating feedback: {e}")
